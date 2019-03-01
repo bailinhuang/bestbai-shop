@@ -1,0 +1,110 @@
+@import '../../main';
+
+.nav{
+  display: flex; 
+  flex-direction: column;
+  @extend %flex-all-center;
+  background-color: $color-primary;
+  color: white; 
+}
+
+.general-container{
+  display: flex;
+  flex-direction: column;
+  @extend %flex-all-center;
+}
+
+.general-container a, .nav-tool li, .nav-tool form{
+  margin: 0.5rem;
+}
+
+.categories{
+  @extend %flex-all-center;
+  width: 100%;
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.nav-tool{
+  display: flex;
+  flex-direction: column-reverse;
+  @extend %flex-all-center; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} 
+
+.nav-tool li{ 
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
+
+.search-input{
+  max-width: 10rem;
+  border: none;
+  padding: 0.2rem;
+  border-radius: 2px;
+}
+
+.logo{
+  margin: 0;
+} 
+
+.user-navlink{
+  display: flex;
+  align-content: center;
+  align-items: center; 
+  justify-content: space-evenly;
+}
+
+.search-button{
+  min-height: 1.55rem; 
+}
+
+@media (min-width: $tablet) {
+
+  .nav, .general-container, .categories{
+    flex-direction: row;
+  } 
+  .search-input{
+    max-width: 15rem;
+  }
+  
+  .nav-tool{
+    flex-direction: row;
+  }
+
+  .nav-tool li{ 
+    font-size: 1.25rem;
+  }
+  
+  .search-input{
+    width: 20rem;
+  }
+
+  .searchForm{
+    // margin-right: 4rem;
+  }
+
+  .logo{
+    padding: 1rem 0;
+  }
+}
+
+@media(min-width: $laptop){
+  .nav{
+    justify-content: space-between;
+    padding: 0 3rem;
+  }
+
+  .nav-tool{
+    width: auto;
+  }
+}

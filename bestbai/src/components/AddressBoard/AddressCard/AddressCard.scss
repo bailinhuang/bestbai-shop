@@ -1,0 +1,24 @@
+.address-card{
+  display: flex;
+  flex-direction: column; 
+  margin-right: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+}
+
+.address-card-tools{
+  display: flex;
+}
+
+.address-card-tools button{
+  width: 4rem;
+  height: 1.5rem;
+  margin-right: 0.25rem;
+}
+
+.deliver-button{
+  max-width: 12rem;
+  height: 2rem;
+}

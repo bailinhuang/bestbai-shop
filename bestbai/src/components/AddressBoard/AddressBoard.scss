@@ -1,0 +1,25 @@
+@import '../../main';
+
+.address-container-title{
+	margin-bottom: 1rem;
+}
+
+.addressList-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.address-form{
+	display: flex;
+	flex-direction: column; 
+	padding: 1rem;
+	margin: 1rem;
+	border: 1px solid black;
+	width: auto;
+}
+
+.button-addAddress{
+	height: 3rem;
+	width: 12rem;
+	align-self: baseline;
+}

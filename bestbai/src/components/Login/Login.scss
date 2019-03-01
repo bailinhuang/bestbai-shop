@@ -1,0 +1,10 @@
+@import '../../main';
+
+.login-container{
+  margin-top: 4rem;
+  @extend %flex-column-centered;
+}
+
+.loginForm{ 
+  @extend %flex-column-centered;
+}

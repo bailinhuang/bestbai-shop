@@ -1,0 +1,17 @@
+/* Try that : */
+
+/* 
+*{
+  border-radius: 100% !important;
+}
+*/
+
+body{
+	background-color:white;
+}
+@import './styles/loader.scss';
+@import './main';
+
+.App{
+  height: 100vh;
+}

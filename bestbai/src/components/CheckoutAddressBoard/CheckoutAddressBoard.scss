@@ -1,0 +1,10 @@
+@import '../../main';
+.checkoutAddressBoard{
+  margin: $mobile-side-margin;
+}
+
+@media(min-width: $tablet){
+  .checkoutAddressBoard{
+    margin: $primary-side-margin;
+  }
+}

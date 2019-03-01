@@ -1,0 +1,36 @@
+@import '../../main';
+
+.carousel-wrapper
+
+.home-container{
+  display: flex;
+  @extend %flex-all-center;
+}
+
+.banner{ 
+  margin: 0;
+  padding: 0;
+  border: none; 
+}
+
+.banner img{
+  width: 100%;
+  vertical-align:bottom;
+}
+
+.square{  
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.square img{
+  width: 100%;
+  margin: 0;
+}
+
+.square12{
+  padding: 23.7rem 0 0;
+  margin: 0;
+}

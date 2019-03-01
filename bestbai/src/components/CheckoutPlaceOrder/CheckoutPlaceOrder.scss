@@ -1,0 +1,78 @@
+@import '../../main';
+
+.checkout-order-wrapper{
+  margin: $mobile-side-margin;
+  display: flex;
+  flex-direction: column;
+  @extend %flex-all-center;
+}
+
+.checkout-order-container, .order-details{
+  
+  @extend %flex-all-center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-details{
+  flex-direction: row;
+}
+
+.order-details .address-card, .order-details .payment-card{
+  margin: 0;
+  width: auto;
+}
+
+.order-items{
+  margin: 1rem 0;
+}
+
+.order-items .card-vertical{
+  width: auto;
+}
+
+.order-summary{
+  padding: 1.5rem;
+  border: 1px solid lightgrey;
+  height: 10rem;
+}
+
+.place-order-button{
+  width: 10rem;
+  height: 2rem;
+}
+
+@media(min-width: $tablet){  
+
+  .checkout-order-wrapper{
+    margin: $primary-side-margin;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    align-content: flex-end;
+    align-items: flex-start;
+  }
+  .checkout-order-container{
+    margin: $primary-side-margin;
+    flex-direction: column;
+  }
+
+  .order-summary{
+    margin-left: 2rem;
+  }
+
+  .order-details{
+    flex-direction: row;
+  } 
+}
+
+@media(min-width: $laptop){  
+
+  .checkout-order-container{
+    flex-direction: column;
+  }
+
+  .order-details{
+    flex-direction: row;
+  } 
+}
+

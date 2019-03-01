@@ -1,0 +1,16 @@
+@import '../../main';
+
+.account-order-container{
+  margin: $mobile-side-margin;
+}
+
+.order-cards-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media(min-width: $tablet){
+  .account-order-container{
+    margin: $primary-side-margin;
+  }
+}

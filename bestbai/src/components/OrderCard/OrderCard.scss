@@ -1,0 +1,41 @@
+@import '../../main';
+
+.order-card{
+  border: 1px solid lightgrey;
+  margin: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.order-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.order-id{
+  font-size: x-small;
+}
+
+.order-details{
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex; 
+}
+
+.order-product{
+  margin: 1rem;
+}
+
+.order-product-img-wrapper{
+  max-width: 10rem;
+}
+
+.order-product-img-wrapper img{
+  width: 100%;
+}
+
+@media(min-width: $tablet){
+  .order-content{
+    flex-direction: row;
+  }
+}

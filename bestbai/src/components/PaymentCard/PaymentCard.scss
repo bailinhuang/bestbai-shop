@@ -1,0 +1,12 @@
+.payment-card{
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  max-width: 15rem;
+}
+
+.payment-checkout-button{
+  height: 2rem;
+}

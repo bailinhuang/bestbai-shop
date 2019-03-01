@@ -1,0 +1,21 @@
+@import '../../main';
+
+.register-container{
+  display: flex;
+  flex-direction: column; 
+  @extend %flex-all-center;
+  margin-top: 2rem;
+}
+
+.registerForm{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+  @extend %flex-all-center;
+}
+
+.registerForm input{
+  margin: 0.5rem 0;
+  width: 100%;
+}

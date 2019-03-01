@@ -1,0 +1,36 @@
+@import '../../main';
+
+.cart-wrapper{
+ margin: $mobile-side-margin;   
+ max-width: $laptop;
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: column; 
+}
+
+.cart-tools-addToCart{
+    padding: 0.5rem;
+}
+
+.cart-title{
+    margin: 0.25rem 0;
+}
+
+@media(min-width: $tablet){
+    .cart-wrapper{
+        margin: $tablet-side-margin;   
+       }
+
+    .cart-list{
+        max-width: 64rem;
+    }
+
+    .cart-tools{
+        flex-basis: 30%; 
+        align-self: flex-end;
+    }
+        
+    
+}

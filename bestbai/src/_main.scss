@@ -1,0 +1,66 @@
+$color-primary: rgba(45,45,45,0.98); //#107dac;
+$color-light: #189ad3;
+$color-alt-light: #1ebbd7;
+$color-lighter:#71c7ec;
+$color-dark: #0C5D7F ;
+$color-darker:#005073;
+
+$mobile-side-margin: 0.5rem;
+$tablet-side-margin: 2rem;
+$primary-side-margin: 5rem; 
+
+$landscape-phone: 576px;
+$tablet: 768px;
+$laptop: 1024px;
+
+%flex-all-center{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+%flex-column-centered{
+  display: flex;
+  flex-direction: column; 
+  @extend %flex-all-center;
+}
+
+%button-primary-color{
+  color: $color-primary;
+}
+
+button{
+  border-radius: 2px;
+  border: none;
+  background-color: $color-primary;
+}
+
+button:hover{
+  background-color: white;
+  border:1px solid darkgrey;
+  color: grey;
+  transition: .2s;
+  cursor: pointer;
+}
+
+
+a:hover{
+  // background-color: $color-dark;
+  color: grey;
+}
+
+.input-button{ 
+  border: none;
+}
+
+input{
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+}
+
+select{
+  padding: 0.15rem;
+  border-radius: 4px;
+}
